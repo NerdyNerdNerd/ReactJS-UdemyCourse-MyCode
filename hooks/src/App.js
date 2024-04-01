@@ -5,16 +5,12 @@ function App() {
   //handleSubmit Function
   const handleSubmit=()=>{
   const el = document.querySelector(".search");
-  console.log(el);
+  el.style.padding = "50px";
   }
 
   useEffect(() => {
-    first
-  
-    return () => {
-      second
-    }
-  }, [third])
+    handleSubmit();
+  }, [])
   
 
   return (
