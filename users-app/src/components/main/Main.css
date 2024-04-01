@@ -1,0 +1,28 @@
+.cardWrapper{
+width: 35rem;
+height: 40rem;
+text-align: center;
+}
+.cardMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2rem;
+    background: radial-gradient(white 1%, #00e598);
+}
+img{
+    border-radius: 50%;
+}
+.cardHeader{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.btnGetUser{
+    margin-top: 2rem;
+    background-color: #00e598;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #00e598;
+}

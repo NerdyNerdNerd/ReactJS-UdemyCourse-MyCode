@@ -29,6 +29,14 @@ background-color: black;
   display: flex;
   justify-content: center;
 }
+.footerTotalDetails{
+  margin-left: 25px;
+  color: lime;
+}
+.footerCompletedDetails{
+  color: red;
+  margin-left: 15px;
+}
 .mainWrapper{
   width: 100%;
   display: flex;
@@ -46,19 +54,19 @@ background-color: black;
   padding: 0px 10px;
   border-radius: 10px;
   background-color: black;
-  color: rgb(0,255,0);
+  color: lime;
   font-size: large;
 }
 .doneBtn{
-  border: 2px solid rgb(0,255,0);
+  border: 2px solid lime;
   background-color: black;
-  color: rgb(0,255,0);
+  color: lime;
   padding: 5px;
   border-radius: 5px;
   margin: 5px;
 }
 .doneBtn:hover{
-  background-color: rgb(0,255,0);
+  background-color: lime;
   color: black;
   cursor: pointer;
 }
@@ -76,13 +84,13 @@ background-color: black;
   cursor: pointer;
 }
 .hOne{
-  color: rgb(0,255,0);
+  color: lime;
 }
 .hTwo{
   color: red;
 }
 .formStyle{
-  color: rgb(0, 255, 0);
+  color: lime;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -91,37 +99,38 @@ background-color: black;
   padding: 16px;
 }
 .selectStyle{
-  background-color: rgb(0, 255, 0);
+  background-color: lime;
   color: black;
   padding: 3px;
   border-radius: 5px;
 }
 .inputStyle{
-  border-color: rgb(0, 255, 0);
+  border-color: lime;
   background-color: black;
-  color: rgb(0, 255, 0); 
+  color: lime; 
   width: 30%;
   padding: 3px;
 }
+
 .inputStyle::placeholder{
-  color: rgb(0, 255, 0);
+  color: lime;
 }
 .inputStyle:focus{
-  border-color: rgb(0, 255, 0);
+  border-color: lime;
   outline: none;
 }
 .inputStyle:focus::placeholder {
   color: transparent; /* Placeholder text becomes transparent on focus */
 }
 .btnAdd{
-  border: 2px solid rgb(0,255,0);
+  border: 2px solid lime;
   background-color: black;
-  color: rgb(0,255,0);
+  color: lime;
   padding: 4px;
   border-radius: 5px;
 }
 .btnAdd:hover{
-  background-color: rgb(0,255,0);
+  background-color: lime;
   color: black;
   cursor: pointer;
 }

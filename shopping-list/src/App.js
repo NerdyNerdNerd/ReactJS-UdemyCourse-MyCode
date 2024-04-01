@@ -18,6 +18,8 @@ const handleDoneItem=(id)=>{
   setItems(item=>items.map(item=>item.id===id ? {...item, packed:!item.packed} : item));
 };
 
+
+
   return (
   <div className="appWrapper">
     <Header/>
@@ -27,7 +29,7 @@ const handleDoneItem=(id)=>{
     onDeleteItem={handleDeleteItem}
     handleDoneItem={handleDoneItem}
     />
-    <Footer/>
+    <Footer items = {items}/>
   </div>
   );
  

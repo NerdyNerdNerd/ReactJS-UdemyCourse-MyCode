@@ -1,0 +1,19 @@
+body {
+ background-color: black;
+}
+.app{
+  text-align: center;
+  margin-top: 3rem;
+}
+.btnStyle{
+  border: 2px solid lime;
+  background-color: black;
+  color: lime;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.divStyle{
+  color: lime;
+}
+
