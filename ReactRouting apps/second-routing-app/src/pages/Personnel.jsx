@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const Personnel = () => {
   //setup the state
   const [people, setPeople]=useState([]);
+  const navigate=useNavigate();
   //getPeople function fetches the object from the API
   const getPeople =() => {
     fetch("https://reqres.in/api/users")
@@ -28,7 +30,7 @@ useEffect(() => {
             <div key={id} className="personnelCard">
                 <img src={avatar} alt="img" />
                 <p>{first_name} {last_name}</p>
-                <p>{email}</p>
+                <button className="detailsBtn" onClick={()=>navigate(`/personnel/${id}`)}>Details</button>
             </div>
           )
          })}
