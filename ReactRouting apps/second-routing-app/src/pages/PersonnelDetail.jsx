@@ -32,10 +32,10 @@ const PersonnelDetail = () => {
       <img src= {person?.avatar} alt="avatar" />
       <p> { person?.email }</p>
       <div className="btnWrapper">
-        {/* <button onClick={ () => navigate("/") } >Home</button>
-        <button onClick={ () => navigate(-1) } >Go Back</button> */}
-        <Link className="homeLink" to={'/'}>Home</Link>
-        <Link className="goackLink" to={-1}>Go Back</Link>
+        <button onClick={ () => navigate("/") } >Home</button>
+        <button onClick={ () => navigate(-1) } >Go Back</button>
+        {/* <Link className="homeLink" to={'/'}>Home</Link>
+        <Link className="goackLink" to={-1}>Go Back</Link> */}
         </div>
     </div>
   );

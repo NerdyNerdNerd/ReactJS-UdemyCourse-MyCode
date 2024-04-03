@@ -62,7 +62,11 @@
   gap: 5px;
 }
 .errorWrapper{
-  text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 60vh;
 }
 .errorWrapper img{
   width: 20re

@@ -5,7 +5,7 @@ import NotFound from "./pages/NotFound"
 import Footer from "./components/Footer"
 import Contact from "./pages/Contact"
 import PersonnelDetail from "./pages/PersonnelDetail"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/personnel" element={<Personnel />} />
         <Route path="/personnel/:id" element={<PersonnelDetail />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Navigate to={"/"}/>} />
       </Routes>
 
       <Footer />
