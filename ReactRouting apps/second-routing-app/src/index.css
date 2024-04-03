@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+.active {
+  color: red;
+}
+.aboutWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.aboutInfo {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.coursesWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  gap: 32px;
+}
+.iconWrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card img{
+  width: 15rem;
+}
+.contactWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  height: calc(100vh - 182px);
+}
+.formWrapper{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.infoWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.errorWrapper{
+  text-align: center;
+}
+.errorWrapper img{
+  width: 20re
+}
+.footerWrapper{
+  border-top: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 32px;
+}
+.footerInfo{
+  margin-bottom: 15px;
+  padding: 8px;
+  font-weight: bolder;
+  color: black;
+  background-color: white;
+  border: 3px solid black;
+}
+.navWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32px;
+  margin-bottom: 32px;
+  padding-top: 10px;
+}
+.navigationWrapper{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigationWrapper li{
+  border: 2px solid black;
+  padding: 5px;
+}
+.logo{
+  width: 75px;
+}
+.personnelWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.personnelCardWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.personnelCard{
+    width: 30%;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .logo{
+    display: none;
+  }
+  .navigationWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
