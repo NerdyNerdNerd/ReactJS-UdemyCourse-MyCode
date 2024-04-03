@@ -9,6 +9,7 @@ import NotFound from "./NotFound";
 const PersonnelDetail = () => {
   const [person, setPerson]=useState("");
   const [error, setError]=useState(false);
+  const [loading, setLoading]=useState(true);
   const navigate = useNavigate();
   const { id } = useParams();
  // const { state :person} = useLocation();
@@ -25,17 +26,27 @@ const PersonnelDetail = () => {
   fetch(`https://reqres.in/api/users/${id}`).then((res)=>{
     if(!res.ok){
       setError(true);
+      setLoading(false);
       throw new Error("Something went wrong");
     }
     return res.json()
   })
-  .then((data)=>setPerson(data.data))
+  .then((data)=>{
+    setPerson(data.data);
+    setLoading(false);
+  })
   .catch((err)=>console.log(err));
  }, [])
 
 if (error) {
   return <NotFound />
-}else {
+}
+if(loading){
+    return <div>
+      <h3>Data Loading</h3>
+    </div>
+}
+if(!error && !loading) {
   return (
     <div className="personWrapper">
       <h3> { person?.first_name } { person?.last_name } </h3>
