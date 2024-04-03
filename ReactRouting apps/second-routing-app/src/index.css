@@ -4,6 +4,7 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
+  background-color: darkseagreen;
 }
 .active {
   color: red;
@@ -99,6 +100,8 @@
 .navigationWrapper li{
   border: 2px solid black;
   padding: 5px;
+  
+ 
 }
 .logo{
   width: 75px;
@@ -120,6 +123,23 @@
 .personnelCard{
     width: 30%;
     text-align: center;
+}
+.personWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.btnWrapper{
+    display: flex;
+    gap: 10px;
+}
+.btnWrapper button{
+  background-color: #436F43;
+  padding: 3.5px;
+  border: 2px solid #BC8FBC;
+  color: #c7dec7;
 }
 @media screen and (max-width: 768px) {
   .logo{

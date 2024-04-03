@@ -13,9 +13,9 @@ const Personnel = () => {
     .then((data)=>setPeople(data.data))
     .catch((err) => console.log(err));
   }
-  //cehck that data arrived by logging people to the console
+  //check that data arrived by logging people to the console
   console.log(people);
-//useEffect hook to call setPoeple();
+//useEffect hook to call setPeople();
 useEffect(() => {
   getPeople();
 },[]);
@@ -30,6 +30,7 @@ useEffect(() => {
             <div key={id} className="personnelCard">
                 <img src={avatar} alt="img" />
                 <p>{first_name} {last_name}</p>
+                {/* <button className="detailsBtn" onClick={()=>navigate(`/personnel/${id}`,{ state : person })}>Details</button> */}
                 <button className="detailsBtn" onClick={()=>navigate(`/personnel/${id}`)}>Details</button>
             </div>
           )
