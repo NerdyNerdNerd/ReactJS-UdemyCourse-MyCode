@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Personnel = () => {
@@ -30,8 +30,8 @@ useEffect(() => {
             <div key={id} className="personnelCard">
                 <img src={avatar} alt="img" />
                 <p>{first_name} {last_name}</p>
-                {/* <button className="detailsBtn" onClick={()=>navigate(`/personnel/${id}`,{ state : person })}>Details</button> */}
-                <button className="detailsBtn" onClick={()=>navigate(`/personnel/${id}`)}>Details</button>
+                {/* <button className="detailsBtn" onClick={()=>navigate(`/personnel/${id}`)}>Details</button> */}
+                <Link to={`/personnel/${id}`}>Details</Link>
             </div>
           )
          })}

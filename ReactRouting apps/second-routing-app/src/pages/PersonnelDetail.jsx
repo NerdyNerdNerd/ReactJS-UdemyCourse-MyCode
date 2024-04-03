@@ -1,7 +1,7 @@
 //import { useParams, useLocation } from "react-router-dom"
 //import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 
 
 
@@ -32,8 +32,10 @@ const PersonnelDetail = () => {
       <img src= {person?.avatar} alt="avatar" />
       <p> { person?.email }</p>
       <div className="btnWrapper">
-        <button onClick={ () => navigate("/") } >Home</button>
-        <button onClick={ () => navigate(-1) } >Go Back</button>
+        {/* <button onClick={ () => navigate("/") } >Home</button>
+        <button onClick={ () => navigate(-1) } >Go Back</button> */}
+        <Link className="homeLink" to={'/'}>Home</Link>
+        <Link className="goackLink" to={-1}>Go Back</Link>
         </div>
     </div>
   );
