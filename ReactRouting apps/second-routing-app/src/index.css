@@ -139,6 +139,18 @@
     display: flex;
     gap: 10px;
 }
+.btnWrapperNotFound{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+}
+.btnWrapperNotFound button{
+  background-color: #436F43;
+  padding: 3.5px;
+  border: 2px solid #BC8FBC;
+  color: #c7dec7;
+}
 .btnWrapper button{
   background-color: #436F43;
   padding: 3.5px;

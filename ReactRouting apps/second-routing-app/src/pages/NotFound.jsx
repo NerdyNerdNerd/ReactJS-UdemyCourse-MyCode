@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <div className='errorWrapper'>
       <img src={error} alt="error" />
-      <div className="btnWrapper">
+      <div className="btnWrapperNotFound">
         <button onClick={ () => navigate("/") } >Home</button>
         <button onClick={ () => navigate(-1) } >Go Back</button>
         {/* <Link className="homeLink" to={'/'}>Home</Link>
