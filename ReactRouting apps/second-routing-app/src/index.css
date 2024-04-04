@@ -157,6 +157,31 @@
   border: 2px solid #BC8FBC;
   color: #c7dec7;
 }
+.pathWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pathsBtnGroup{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.pathsBtnGroup a{
+  background-color: #436F43;
+  padding: 5px;
+  border: none;
+  color: #c7dec7;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.pathDetail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 768px) {
   .logo{
     display: none;
