@@ -9,6 +9,11 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Paths from "./pages/Paths"
 import Frontend from "./pages/Frontend"
 import Backend from "./pages/Backend"
+import PrivateRouter from "./pages/PrivateRouter"
+import Login from "./pages/Login"
+
+
+
 
 function App() {
   return (
@@ -16,11 +21,14 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/personnel" element={<Personnel />} />
-        <Route path="/personnel/:id" element={<PersonnelDetail />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/paths" element={<Paths />} >
+        <Route index element={<Home />} />
+        <Route path="personnel" element={<Personnel />} />
+        <Route path="personnel/:id" element={<PersonnelDetail />} />
+        <Route path="login" element={<Login />} />
+        <Route path="contact" element={<PrivateRouter />}>
+          <Route path="" element={<Contact />} />
+        </Route>
+        <Route path="paths" element={<Paths />} >
           {/* <Route index element={<Frontend />} />  used to allow to load when paths page loads*/}
           <Route path="frontend" element={<Frontend />} />
           <Route path="backend" element={<Backend />} />

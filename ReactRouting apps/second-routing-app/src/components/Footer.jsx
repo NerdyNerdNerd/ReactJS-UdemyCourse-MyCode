@@ -1,10 +1,15 @@
+import { useLayoutEffect } from "react"
 import footerImage from "../img/backToTopFooterImage-88x52.png"
+
+// useLayoutEffect(() => {
+//   window.scrollTo(0, 0);
+// }, []);
 
 const Footer = () => {
   return (
     <div className='footerWrapper'>
-      <div className='footerInfo'>FOOTER</div>
       <img src={footerImage} alt="backToTopImage" />
+      <button onClick={() => window.scrollTo(0,0)} className='footerInfo'>FOOTER</button>
     </div>
   )
 }
